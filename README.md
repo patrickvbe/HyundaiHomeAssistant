@@ -1,6 +1,7 @@
 # Charge Hyundai / Kia based on energy price threshold
 
 This repository describes how I use the [KIA / Hyundai integration](https://github.com/Hyundai-Kia-Connect/kia_uvo) (install with [HACS](https://www.home-assistant.io/blog/2024/08/21/hacs-the-best-way-to-share-community-made-projects/)) in [Home Assistant](https://www.home-assistant.io/) to dynamically charge my Hyundai Ioniq 6 based on the dynamic engergy prices of my energy contract (Zonneplan).
+The energy prices are collected with the [Unofficial Zonneplan integration for Home Assistant](https://github.com/fsaris/home-assistant-zonneplan-one).
 
 ## Main panel
 
@@ -8,11 +9,11 @@ The main panel for my setup looks like this:
 
 ![Image with energy prices, charging status of the car and a settings control for the threshold](images/Panel.jpg.png)
 
-The energy prices are collected with the [Unofficial Zonneplan integration for Home Assistant](https://github.com/fsaris/home-assistant-zonneplan-one).
-
 The process is controlled by threshold to start / stop charging, which is a "helper" type in HA:
 
 ![Image which shows the configuration of the threshold helper](images/threshold.jpg.png)
+
+Charging starts when the price drops below the threshold and stops when the price rises above the threshold (and does not change whatever it's doing when it's exactly the threshold, but that's how HA works / floats work).
 
 The three items on the left are just tile cards which show the status of the car. The "Plug" tile also has actions bound to it:
 - Update the status from Hyundai when tapped on the icon

@@ -9,7 +9,9 @@ The main panel for my setup looks like this:
 
 ![Image with energy prices, charging status of the car and a settings control for the threshold](images/Panel.jpg.png)
 
-The process is controlled by threshold to start / stop charging, which is a "helper" type in HA:
+(Yes, it was a cold day in January 2024 when I took this screenshot, with hight energy prices :-( )
+
+The process is controlled by threshold to start / stop charging, which is an "input number helper" type in HA:
 
 ![Image which shows the configuration of the threshold helper](images/threshold.jpg.png)
 

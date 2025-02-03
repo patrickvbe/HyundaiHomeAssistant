@@ -1,7 +1,7 @@
 # Charge Hyundai / Kia based on energy price threshold
 
 This repository describes how I use the [KIA / Hyundai integration](https://github.com/Hyundai-Kia-Connect/kia_uvo) (install with [HACS](https://www.home-assistant.io/blog/2024/08/21/hacs-the-best-way-to-share-community-made-projects/)) in [Home Assistant](https://www.home-assistant.io/) to dynamically charge my Hyundai Ioniq 6 based on the dynamic engergy prices of my energy contract (Zonneplan).
-The energy prices are collected with the [Unofficial Zonneplan integration for Home Assistant](https://github.com/fsaris/home-assistant-zonneplan-one).
+The energy prices are collected with the [Unofficial Zonneplan integration for Home Assistant](https://github.com/fsaris/home-assistant-zonneplan-one). You can also use this when you are not a customer of Zonneplan. The prices are currently the day-ahead prices from The Netherlands + € 0,02.
 
 ## Main panel
 

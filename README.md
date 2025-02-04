@@ -81,6 +81,9 @@ conditions:
   - condition: state
     entity_id: binary_sensor.ioniq6_ev_battery_plug
     state: "on"
+  - condition: state
+    entity_id: device_tracker.ioniq6_location
+    state: home
 actions:
   - action: kia_uvo.start_charge
     data: {}
@@ -108,6 +111,9 @@ conditions:
   - condition: state
     entity_id: binary_sensor.ioniq6_ev_battery_charge
     state: "on"
+  - condition: state
+    entity_id: device_tracker.ioniq6_location
+    state: home
 actions:
   - action: kia_uvo.stop_charge
     data: {}
